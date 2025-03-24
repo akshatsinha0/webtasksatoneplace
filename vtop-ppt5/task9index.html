@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Layout</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 50px; /* Adds spacing between the tables */
+            justify-content: center;
+            margin-top: 50px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            height: 300px;
+        }
+        td {
+            border: 1px solid black;
+            vertical-align: top;
+            padding: 20px;
+        }
+        .nav {
+            width: 150px; /* Set width for the navigation column */
+        }
+        .content {
+            width: 250px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- First Table -->
+    <table>
+        <tr>
+            <td class="content">
+                <span class="bold">Curriculum Vitae</span>
+                <br><br>
+                Welcome to my CV!
+            </td>
+            <td class="nav">
+                Personal data <br><br>
+                Education <br><br>
+                Professional experience
+            </td>
+        </tr>
+    </table>
+
+    <!-- Second Table -->
+    <table>
+        <tr>
+            <td class="content">
+                <span class="bold">Curriculum Vitae</span>
+                <br><br>
+                <span class="bold">Personal data</span>
+                <br><br>
+                <i>Name:</i> Azamat <br>
+                <i>Surname:</i> Azamat <br>
+                <i>Date of birth:</i> 30.07.74 <br>
+                <i>Place of birth:</i> Bishkek, Kyrgyzstan
+            </td>
+            <td class="nav">
+                Personal data <br><br>
+                Education <br><br>
+                Professional experience
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

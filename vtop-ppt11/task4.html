@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Palindrome Checker</title>
+  <style>
+    /* Set a pleasant gradient background for the entire page */
+    body {
+      background: linear-gradient(135deg, #D9AFD9, #97D9E1);
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    /* Style the container for the checker */
+    .checker {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 350px;
+    }
+    /* Input styling */
+    .checker input[type="text"] {
+      padding: 10px;
+      width: calc(100% - 22px);
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    /* Button styling */
+    .checker button {
+      padding: 10px 20px;
+      background-color: #1c92d2;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .checker button:hover {
+      background-color: #166ba8;
+    }
+    /* Result text styling */
+    .result {
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="checker">
+    <h2>Palindrome Checker</h2>
+    <!-- Input field for user to enter text -->
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <br>
+    <!-- Button to trigger the palindrome check -->
+    <button onclick="checkPalindrome()">Check</button>
+    <!-- Area where the result will be displayed -->
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function checkPalindrome() {
+      // Get the input string
+      const input = document.getElementById('inputString').value;
+      // Remove all non-alphanumeric characters and convert to lower case
+      const cleaned = input.replace(/[\W_]/g, '').toLowerCase();
+      // Reverse the cleaned string
+      const reversed = cleaned.split('').reverse().join('');
+      // Check if the cleaned string is the same as its reverse
+      const isPalindrome = cleaned === reversed;
+      // Display the result
+      document.getElementById('result').textContent =
+        isPalindrome ? "It's a palindrome!" : "Not a palindrome.";
+    }
+  </script>
+</body>
+</html>

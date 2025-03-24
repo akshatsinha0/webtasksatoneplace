@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Border Example</title>
+  <style>
+    .box {
+      margin: 20px;
+      padding: 10px;
+    }
+    .box1 {
+      border-top: 2px dashed red;
+      border-bottom: 2px dotted red;
+      border-left: 2px solid red;
+      border-right: 2px solid red;
+    }
+    .box2 {
+      border-top: 2px solid black;
+      border-left: 2px dotted black;
+      border-right: 2px solid black;
+      border-bottom: 2px dashed black;
+    }
+    .box3 {
+      border: 2px dotted black;
+    }
+    .box4 {
+      border: 2px solid black;
+    }
+    .box5 {
+      border: 2px solid blue;
+    }
+    .box6 {
+      border-top: 2px solid green;
+      border-bottom: 2px dotted green;
+      border-left: 2px solid green;
+      border-right: 2px solid blue;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box box1">
+    This is the example of CSS Border Style property.
+  </div>
+
+  <div class="box box2">
+    This is the example of CSS Border Style Shorthand property. The border style defines with order: top, right, bottom, and left side of HTML element.
+  </div>
+
+  <div class="box box3">
+    This is the example of CSS Border Width, Style and Color properties.
+  </div>
+
+  <div class="box box4">
+    This is the example of CSS Border Style Shorthand property. Please note that border style is the only mandatory thing to set border. Border width &amp; color is optional and those values can be taken from browsers default.
+  </div>
+
+  <div class="box box5">
+    This is the example of CSS Border Shorthand property.
+  </div>
+
+  <div class="box box6">
+    You can override one border property with another or individual border property. Latest defined border property will override existing one.
+  </div>
+
+</body>
+</html>

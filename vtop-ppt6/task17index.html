@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Victoria's Journal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #c0cbd3;
+      background-image: url("background.gif");
+      background-repeat: repeat;
+    }
+    .outer-container {
+      width: 80%;
+      margin: 20px auto;
+      border: 5px solid darkgreen;
+      min-height: 60vh;
+      box-sizing: border-box;
+      padding: 0;
+    }
+    .heading {
+      font-family: "Trebuchet MS", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .description {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      color: rgb(4, 162, 162);
+      text-align: left;
+    }
+    .red-box {
+      border: 3px solid red;
+      margin: 0;
+      padding: 10px;
+    }
+    .yellow-box {
+      border: 5px solid rgb(255, 170, 0);
+      margin-top: 10px;
+      padding: 10px;
+    }
+    .spatula-container, .cupcake-container {
+      border: 5px solid darkblue;
+      background-color: #E8FBFB;
+      margin: 10px 0 0 0;
+      padding: 5px;
+    }
+    .entry-heading {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 0;
+    }
+    .purple-box {
+      border: 5px solid purple;
+      padding: 5px;
+      display: inline-block;
+      margin: 0;
+    }
+    .entry-content {
+      margin-top: 10px;
+    }
+    .entry-content img {
+      width: 100px;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .entry-content p {
+      margin-top: 10px;
+    }
+    .cupcake-container p.description + p.description {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer-container">
+    <div class="red-box">
+      <h1 class="heading">Victoria's Journal</h1>
+      <div class="yellow-box">
+        <h2 class="heading">So fresh and so clean</h2>
+      </div>
+    </div>
+    <div class="spatula-container">
+      <div class="entry-heading">
+        <div class="purple-box">04/09/08:</div>
+        <span>Spatulas</span>
+      </div>
+      <div class="entry-content">
+        <img src="Spatula.jpg" alt="Spatula">
+        <p class="description">
+          Yesterday I went to the store and got some much-needed spatulas! (What better way to say I love myself than to buy myself a spatula?)
+        </p>
+      </div>
+    </div>
+    <div class="cupcake-container">
+      <div class="entry-heading">
+        <div class="purple-box">04/08/08:</div>
+        <span>Cookie Monster Cupcakes</span>
+      </div>
+      <div class="entry-content">
+        <img src="Easy-Cookie-Monster-Cupcakes14.jpg" alt="Cookie Monster Cupcakes">
+        <p class="description">
+          My favorite cartoon character is Cookie Monster, and my favorite dessert is cupcakes, so Cookie Monster cupcakes are the best of both worlds.
+        </p>
+      </div>
+      <br>
+      <p class="description">
+        Did you know? Cookie Monster once said, “Sometimes me think what is love, and then me think love is what last cookie is for. Me give up the last cookie for you.” I wonder if the same applies for cupcakes? (If so, I don’t think I can ever love ANYONE!)
+      </p>
+    </div>
+  </div>
+</body>
+</html>

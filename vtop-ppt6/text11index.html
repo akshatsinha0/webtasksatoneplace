@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #eef0f2;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: #78916F;
+      font-size: 48px;
+      margin: 20px;
+    }
+    .class-selector {
+      color: #00aaff;
+      font-size: 24px;
+      margin: 20px;
+      text-decoration: underline; /* Underlined text */
+    }
+    #boss {
+      background-color: cyan; /* Cyan-colored box */
+      color: black;
+      font-size: 24px;
+      margin: 20px;
+      padding: 10px; /* Padding to form a box */
+    }
+    .box1 {
+      background-color: #c0f0f0;
+      margin: 20px;
+      padding: 20px;
+    }
+    .red-text {
+      color: red;
+      margin-bottom: 10px;
+    }
+    .blue-text {
+      color: blue;
+      margin: 0;
+    }
+    .box2 {
+      background-color: #f8d0f8;
+      margin: 20px;
+      padding: 20px;
+      text-align: center; /* Center the text inside box2 */
+    }
+    .box2 p:nth-child(2n+1) {
+      color: black;
+    }
+    .box2 p:nth-child(2n) {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Selectors</h1>
+  <p class="class-selector">I'm a class selector</p>
+  <p id="boss">I'm the ID selector. Here I am a boss</p>
+
+  <div class="box1">
+    <p class="red-text">I'm red</p>
+    <p class="red-text">I'm also red</p>
+    <p class="blue-text">What's going on?! Why am I blue?!</p>
+  </div>
+
+  <div class="box2">
+    <p>I'm odd number</p>
+    <p>I'm even number</p>
+    <p>I'm also odd number</p>
+    <p>Hm.. I'm even number</p>
+  </div>
+
+</body>
+</html>

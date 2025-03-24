@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World JavaScript Output</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2em;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    #output {
+      margin-top: 1em;
+      padding: 1em;
+      background: #e0e0e0;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello World Web Page with JavaScript Output Elements</h1>
+  <p>This page demonstrates various ways to output "Hello World" using JavaScript. Check your browser’s console and pop-up alert.</p>
+  
+  <!-- This div will be updated using innerHTML -->
+  <div id="output">This text will be replaced by JavaScript.</div>
+  
+  <script>
+    // 1. Output using document.write()
+    document.write("<p>Output via document.write: Hello World!</p>");
+    
+    // 2. Output using alert()
+    alert("Output via alert: Hello World!");
+    
+    // 3. Output using console.log()
+    console.log("Output via console.log: Hello World!");
+    
+    // 4. Output using DOM manipulation (innerHTML)
+    document.getElementById("output").innerHTML = "Output via innerHTML: Hello World!";
+  </script>
+</body>
+</html>

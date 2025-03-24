@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: red;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 250px;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        input[type="file"] {
+            margin-left: 10px;
+        }
+        .radio-group {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .radio-group input {
+            margin-right: 5px;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            margin-left: 160px;
+        }
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        .buttons {
+            margin-left: 160px;
+            margin-top: 15px;
+        }
+        .buttons input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+            <!-- TASK-7 (Create an Employee Registration webpage using HTML form objects) -->
+            <h1 style="text-align:center;">TASK-7 (Create an Employee Registration webpage using HTML form objects)</h1>
+            <!-- Heading with an optional image -->
+            <h1>
+
+    <h1>Employee Registration Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <label>
+            <input type="radio" name="title" value="Mr"> Mr.
+        </label>
+        <label>
+            <input type="radio" name="title" value="Mrs"> Mrs.
+        </label>
+        <label>
+            <input type="radio" name="title" value="Ms"> Ms.
+        </label>
+        
+
+        <br><br>
+
+        <label>First Name</label>
+        <input type="text" name="fname" placeholder="First Name" required>
+
+        <br><br>
+
+        <label>Last Name</label>
+        <input type="text" name="lname" placeholder="Last Name" required>
+
+        <br><br>
+
+        <label>Mail Address1</label>
+        <input type="text" name="mail1" placeholder="Mail Address1">
+
+        <br><br>
+
+        <label>Mail Address2</label>
+        <input type="text" name="mail2" placeholder="Mail Address2">
+
+        <br><br>
+
+        <label>City</label>
+        <input type="text" name="city" placeholder="City">
+
+        <br><br>
+
+        <label>State</label>
+        <select name="state" required>
+            <option value="">--Select--</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <br><br>
+
+        <label>Zip</label>
+        <input type="text" name="zip" placeholder="Zip" required>
+
+        <br><br>
+
+        <label>Upload Photo</label>
+        <input type="file" name="photo">
+
+        <br><br>
+
+        <label>E-Mail</label>
+        <input type="email" name="email" placeholder="E-Mail" required>
+
+        <br><br>
+
+        <label>Mobile</label>
+        <input type="tel" name="mobile" placeholder="+91" required>
+
+        <br><br>
+
+        <label>Languages Known</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="languages" value="Gujarati"> Gujarati</label>
+            <label><input type="checkbox" name="languages" value="Hindi"> Hindi</label>
+            <label><input type="checkbox" name="languages" value="English"> English</label>
+            <label><input type="checkbox" name="languages" value="Marathi"> Marathi</label>
+        </div>
+
+        <br>
+
+        <label>Additional Information</label>
+        <textarea name="additional" rows="4" placeholder="Optional"></textarea>
+
+        <br>
+
+        <div class="buttons">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 14pt;
+    }
+    thead {
+      background-color: black;
+      color: white;
+    }
+    thead th {
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: rgb(211, 211, 211);
+    }
+    tbody td {
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+        <td>Row 1, Cell 3</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+        <td>Row 2, Cell 3</td>
+      </tr>
+      <tr>
+        <td>Row 3, Cell 1</td>
+        <td>Row 3, Cell 2</td>
+        <td>Row 3, Cell 3</td>
+      </tr>
+      <tr>
+        <td>Row 4, Cell 1</td>
+        <td>Row 4, Cell 2</td>
+        <td>Row 4, Cell 3</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

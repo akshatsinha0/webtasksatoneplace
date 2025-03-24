@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Books n' Beans</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Overall Page Layout */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #c9955b; /* A coffee-like color */
+      padding: 1em;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    /* Navigation Menu */
+    nav {
+      background-color: #eee;
+      width: 200px;
+      float: left; /* Floats the nav to the left */
+      padding: 1em;
+      min-height: calc(100vh - 50px); /* Optional, to extend nav height */
+    }
+    nav ul {
+      list-style-type: none;
+    }
+    nav ul li {
+      margin-bottom: 1em;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content Area */
+    main {
+      margin-left: 200px; /* Leaves space for the floated nav */
+      padding: 1em;
+      background-color: #fff;
+    }
+    main h2 {
+      margin-bottom: 1em;
+    }
+    main img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 1em auto; /* Center the image */
+    }
+    main p {
+      margin-bottom: 1em;
+    }
+
+    /* Footer */
+    footer {
+      clear: both; /* Ensures footer sits below floated elements */
+      background-color: #c9955b;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Area -->
+  <header>
+    <h1>Books n' Beans</h1>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Welcome</h2>
+    <!-- Replace "image.png" with the correct path to your image -->
+    <img src="image.png" alt="Coffee Shop Interior" />
+    <p>
+      Books n' Beans is an artisanal coffee and book shop located in the heart of downtown Northampton.
+      We pride ourselves on serving the best organic coffee combined with new, used, or hard-to-find vintage books.
+    </p>
+    <p>
+      Can't find the book you're looking for? Try one of our friendly neighborhood retailers below:
+    </p>
+    <ul>
+      <li><a href="#">The Montague Bookmill</a></li>
+      <li><a href="#">Grey Matter Books</a></li>
+      <li><a href="#">Northampton Book Shop</a></li>
+      <li><a href="#">Bookworm Company</a></li>
+    </ul>
+  </main>
+
+  <!-- Footer Area -->
+  <footer>
+    <p>
+      123 Main Street, Northampton, MA 01060 | Phone: 413-555-5555 <br />
+      Open Monday - Saturday from 7am to 10pm | Sunday from 8am to 5pm
+    </p>
+  </footer>
+</body>
+</html>

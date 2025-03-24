@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boxes Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #eef0f2;
+      font-family: sans-serif;
+    }
+    .container {
+      max-width: 100%;
+      width: 90%;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #000;
+    }
+    .box1 {
+      background-color: #e03470e7;
+      height: 200px;
+      margin-bottom: 2px;
+    }
+    .row-of-boxes {
+      display: flex;
+      height: 200px;
+      margin-bottom: px;
+    }
+    .box2 {
+      background-color: #bd9f7b;
+      flex: 1;
+      margin-right: 2px;
+    }
+    .box3 {
+      background-color: #f1c40f;
+      flex: 1;
+      margin-right: 2px;
+    }
+    .box4 {
+      background-color: #ffb6c1;
+      flex: 1;
+      margin-right: 2px;
+    }
+    .box5 {
+      background-color: #2ecc71;
+      flex: 1;
+      margin-right: 2px;
+    }
+    .box6 {
+      background-color: #e67e22;
+      flex: 1;
+      margin-right: 2px;
+    }
+    .box7 {
+      background-color: #5d6d7e;
+      flex: 1;
+    }
+    .box8 {
+      background-color: #7e57c2;
+      height: 200px;
+      margin-top: 2px
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box box1">BOX 1</div>
+    <div class="row-of-boxes">
+      <div class="box box2">BOX 2</div>
+      <div class="box box3">BOX 3</div>
+      <div class="box box4">BOX 4</div>
+      <div class="box box5">BOX 5</div>
+      <div class="box box6">BOX 6</div>
+      <div class="box box7">BOX 7</div>
+    </div>
+    <div class="box box8">BOX 8</div>
+  </div>
+
+</body>
+</html>

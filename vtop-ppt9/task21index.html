@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Animated Webpage</title>
+  <style>
+    /* GLOBAL RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+      background: #fafafa;
+    }
+
+    /* HEADER WITH ANIMATED BACKGROUND */
+    header {
+      height: 15vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(45deg, #ff9966, #ff5e62, #ffc371);
+      background-size: 600% 600%;
+      animation: gradientBG 8s ease infinite;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* KEYFRAMES FOR THE HEADER BACKGROUND */
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* HERO SECTION */
+    .hero {
+      min-height: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+      animation: pulse 2s infinite;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      font-size: 1.1rem;
+    }
+
+    /* PULSING TEXT ANIMATION */
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        color: #ff5e62;
+      }
+      50% {
+        transform: scale(1.1);
+        color: #ff9966;
+      }
+    }
+
+    /* CONTENT SECTION */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: #f0f0f0;
+    }
+    .content .text {
+      flex: 1 1 300px;
+      margin: 1rem;
+      min-width: 250px;
+    }
+    .content .text h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .content .text p {
+      margin-bottom: 1rem;
+    }
+    .content .image {
+      flex: 1 1 300px;
+      text-align: center;
+      margin: 1rem;
+      min-width: 250px;
+    }
+    .content .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    /* CALL-TO-ACTION BUTTON */
+    .cta-button {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #ff5e62;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255,94,98,0.4);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER with animated gradient background -->
+  <header>
+    <h1>My Animated Webpage</h1>
+  </header>
+
+  <!-- HERO SECTION with pulsing text -->
+  <section class="hero">
+    <h2>Welcome to My Site!</h2>
+    <p>
+      This page demonstrates a simple layout using HTML and CSS only. Enjoy a pulsing heading and a beautiful, animated gradient in the header—no JavaScript needed!
+    </p>
+    <a class="cta-button" href="#content">Learn More</a>
+  </section>
+
+  <!-- CONTENT SECTION with text and image -->
+  <section id="content" class="content">
+    <div class="text">
+      <h3>Why We Love Web Design</h3>
+      <p>
+        Web design is a creative way to share ideas, products, and services with the world.
+        With modern CSS features, we can craft stunning visuals and engaging user experiences
+        without relying on complex scripts.
+      </p>
+      <p>
+        Whether you’re a beginner or a pro, there’s always something new to learn in the ever-evolving
+        world of web development.
+      </p>
+    </div>
+    <div class="image">
+      <!-- Replace with your own image or URL -->
+      <img src="https://futureteachinstitute.com/wp-content/uploads/2023/07/html-css-beginners.jpg" alt="Web Design Example">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 My Animated Webpage. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
