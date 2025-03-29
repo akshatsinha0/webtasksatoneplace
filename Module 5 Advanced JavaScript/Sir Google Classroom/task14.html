@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Drawing Example</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000;"></canvas>
+  <script>
+    // Get the canvas element and its drawing context.
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Clear the entire canvas.
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw a blue rectangle at (50, 50) with a width of 100 pixels and a height of 50 pixels.
+    ctx.fillStyle = "blue";
+    ctx.fillRect(50, 50, 100, 50);
+
+    // Draw a red circle with a radius of 30 pixels at coordinates (150, 100).
+    ctx.beginPath();
+    ctx.arc(150, 100, 30, 0, Math.PI * 2);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.closePath();
+
+    // Draw a green triangle with vertices at (200, 50), (250, 100), and (150, 100).
+    ctx.beginPath();
+    ctx.moveTo(200, 50);
+    ctx.lineTo(250, 100);
+    ctx.lineTo(150, 100);
+    ctx.closePath();
+    ctx.fillStyle = "green";
+    ctx.fill();
+
+    // Draw the text "Hello, Canvas!" at coordinates (100, 200) using a 20px font and black fill.
+    ctx.font = "20px Arial";
+    ctx.fillStyle = "black";
+    ctx.fillText("Hello, Canvas!", 100, 200);
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Image Example</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="800" height="400" style="border:1px solid #000;"></canvas>
+
+  <script>
+    // 1. Get the canvas element and its 2D rendering context
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // 2. Create a new Image object
+    const img = new Image();
+
+    // 3. Use a file URL to reference your local image
+    //    Note: Browsers often block local file paths. If you see a blank canvas or an error,
+    //    you may need to run this page on a local server rather than opening it directly.
+    img.src = "file:///C:/Users/Akshat%20Sinha/OneDrive/Desktop/TASKS%20WEB/Module%205%20Advanced%20JavaScript/Sir%20Google%20Classroom/fulpattepaudheimage.png";
+
+    // 4. Once the image has loaded, draw it on the canvas
+    img.onload = function() {
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    };
+
+    // 5. Optional: handle any loading errors
+    img.onerror = function() {
+      console.error("Error loading the image. Check your file path or server setup.");
+    };
+  </script>
+</body>
+</html>

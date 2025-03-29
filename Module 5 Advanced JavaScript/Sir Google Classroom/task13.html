@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Red Rectangle and Blue Circle</title>
+</head>
+<body>
+  <!-- Canvas element with width and height -->
+  <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000;"></canvas>
+  
+  <script>
+    // 1. Get the canvas element and its 2D rendering context
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // 2. Draw a red rectangle
+    //    fillStyle sets the color to red, fillRect draws the rectangle.
+    ctx.fillStyle = "red";
+    ctx.fillRect(50, 50, 50, 50);
+
+    // 3. Draw a blue circle
+    //    beginPath starts a new path, arc draws a circle,
+    //    fillStyle sets the color to blue, fill applies the fill.
+    ctx.beginPath();
+    ctx.arc(150, 75, 25, 0, Math.PI * 2);
+    ctx.fillStyle = "blue";
+    ctx.fill();
+    ctx.closePath();
+  </script>
+</body>
+</html>
